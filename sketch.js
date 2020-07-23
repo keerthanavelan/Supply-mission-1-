@@ -39,8 +39,10 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	World.add(world, ground);
 
+	if (isTouching(packageBody,ground){
+		Matter.Body.setStatic(packageBody,true);    
+	}
 	
-
 	Engine.run(engine);
 	
 }
